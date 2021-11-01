@@ -1,0 +1,77 @@
+/* *,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica";
+} */
+
+body {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(54, 2, 54),
+    rgb(44, 44, 156)
+  );
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.calculator {
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 500px;
+  height: 700px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.calculator .screen {
+  height: 100px;
+  background-color: #fff;
+  margin: 7%;
+  position: relative;
+}
+
+.screen p {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-100%);
+  font-size: 1.5rem;
+}
+
+/* BUTTONS */
+
+.calculator .buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin: 7%;
+  height: 70%;
+  background-color: #fff;
+}
+
+.buttons .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  margin: 4%;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: black;
+}
+
+.buttons #btn-equal,
+#btn-clear {
+  background-color: rgb(144, 11, 144);
+  color: #fff;
+}
+
+/* JAVASCRIPT CLASSES */
+
+.clicked {
+  box-shadow: 0 0 3px grey;
+}
